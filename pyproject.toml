@@ -1,0 +1,20 @@
+[project]
+name = "khmer-speech-qc"
+version = "0.1.0"
+description = "Quality control for Khmer speech datasets: validation checks, controlled degradation and a leakage-aware clean-vs-degraded benchmark"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["numpy>=2.0", "scipy>=1.13", "scikit-learn>=1.5", "pandas>=2.2", "matplotlib>=3.8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["data: needs the downloaded OpenSLR SLR42 corpus (skipped when absent)"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "C4"]

@@ -1,0 +1,40 @@
+{
+  "corpus": "OpenSLR SLR42 km_kh_male (CC BY-SA 4.0)",
+  "indexed_utterances": 2906,
+  "indexed_without_wav": [],
+  "wavs_without_index_entry": [],
+  "clips_checked": 2906,
+  "total_hours": 3.966780648148148,
+  "speakers": 16,
+  "sample_rates": {
+    "48000": 2906
+  },
+  "channels": {
+    "1": 2906
+  },
+  "sample_formats": {
+    "int16": 2906
+  },
+  "thresholds": {
+    "min_duration_s": 0.5,
+    "max_duration_s": 20.0,
+    "clipping_ratio": 0.001,
+    "min_rms_dbfs": -40.0,
+    "max_edge_silence_s": 1.5,
+    "min_est_snr_db": 15.0,
+    "min_khmer_ratio": 0.9,
+    "speech_rate_robust_z": 4.0
+  },
+  "flag_counts": {
+    "long_edge_silence": 335,
+    "speech_rate_outlier": 5
+  },
+  "clips_with_any_flag": 340,
+  "exact_duplicate_audio_groups": [],
+  "utterances_sharing_a_transcript": 214,
+  "distinct_transcripts": 2799,
+  "khmer_ratio_min": 1.0,
+  "transcripts_with_latin": 0,
+  "transcripts_with_digits": 0
+}
+speech-rate, est SNR medians: 12.603781260453772 67.8197920328373

@@ -1,0 +1,41 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.5, pytest-9.0.3, pluggy-1.6.0 -- D:\thy-chantha-research-portfolio\khmer-speech-data-quality\.venv\Scripts\python.exe
+rootdir: D:\thy-chantha-research-portfolio\khmer-speech-data-quality
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.11.0, requests-mock-1.12.1
+collecting ... collected 31 items
+
+tests/test_corpus_benchmark.py::test_speaker_parsing PASSED              [  3%]
+tests/test_corpus_benchmark.py::test_load_index_links_wavs_and_reports_gaps PASSED [  6%]
+tests/test_corpus_benchmark.py::test_load_index_rejects_malformed_lines PASSED [  9%]
+tests/test_corpus_benchmark.py::test_segments_drop_partial_tail PASSED   [ 12%]
+tests/test_corpus_benchmark.py::test_conditions_are_per_clip_balanced_per_speaker_and_deterministic PASSED [ 16%]
+tests/test_corpus_benchmark.py::test_quality_dataset_never_puts_one_clip_in_both_classes PASSED [ 19%]
+tests/test_corpus_benchmark.py::test_original_style_is_easier_than_quality_task PASSED [ 22%]
+tests/test_corpus_benchmark.py::test_grouped_cv_keeps_speakers_apart_and_returns_all_models PASSED [ 25%]
+tests/test_corpus_benchmark.py::test_random_split_reports_clip_leakage PASSED [ 29%]
+tests/test_corpus_benchmark.py::test_unseen_noise_evaluation_covers_every_noise_type PASSED [ 32%]
+tests/test_corpus_benchmark.py::test_snr_threshold_finds_separating_value PASSED [ 35%]
+tests/test_real_corpus.py::test_index_is_complete_and_matches_published_layout PASSED [ 38%]
+tests/test_real_corpus.py::test_recorded_summary_matches_index PASSED    [ 41%]
+tests/test_signal_modules.py::test_read_wav_scales_int16_and_reports_format PASSED [ 45%]
+tests/test_signal_modules.py::test_load_mono_resamples_and_downmixes PASSED [ 48%]
+tests/test_signal_modules.py::test_resample_keeps_tone_frequency PASSED  [ 51%]
+tests/test_signal_modules.py::test_frame_signal_shapes_and_padding PASSED [ 54%]
+tests/test_signal_modules.py::test_mel_scale_round_trip_and_filterbank_shape PASSED [ 58%]
+tests/test_signal_modules.py::test_mfcc_shape_and_feature_vector_length PASSED [ 61%]
+tests/test_signal_modules.py::test_spectral_flatness_separates_tone_from_white_noise PASSED [ 64%]
+tests/test_signal_modules.py::test_mix_at_snr_hits_target[0.0] PASSED    [ 67%]
+tests/test_signal_modules.py::test_mix_at_snr_hits_target[10.0] PASSED   [ 70%]
+tests/test_signal_modules.py::test_mix_at_snr_hits_target[20.0] PASSED   [ 74%]
+tests/test_signal_modules.py::test_mix_never_clips PASSED                [ 77%]
+tests/test_signal_modules.py::test_noise_colours_have_expected_spectral_slope PASSED [ 80%]
+tests/test_signal_modules.py::test_babble_requires_other_speakers_and_unknown_kind_fails PASSED [ 83%]
+tests/test_signal_modules.py::test_audio_stats_measure_edges_and_snr PASSED [ 87%]
+tests/test_signal_modules.py::test_noisy_clip_gets_low_snr_flag PASSED   [ 90%]
+tests/test_signal_modules.py::test_clipping_quiet_short_and_silence_flags PASSED [ 93%]
+tests/test_signal_modules.py::test_text_stats_and_text_flags PASSED      [ 96%]
+tests/test_signal_modules.py::test_robust_z_and_rate_flag PASSED         [100%]
+
+============================= 31 passed in 21.99s =============================
