@@ -1,0 +1,16 @@
+seed 0 done after 399s
+  original_style  random_split       AUC {'svm_rbf': 1.0, 'random_forest': 1.0, 'knn_k3': 1.0, 'gradient_boosting': 1.0, 'logistic_regression': 1.0, 'snr_threshold_baseline': 0.994}
+  original_style  speaker_grouped_cv AUC {'svm_rbf': 1.0, 'random_forest': 1.0, 'knn_k3': 1.0, 'gradient_boosting': 1.0, 'logistic_regression': 1.0, 'snr_threshold_baseline': 0.994}
+  quality_task    random_split       AUC {'svm_rbf': 0.999, 'random_forest': 0.998, 'knn_k3': 0.993, 'gradient_boosting': 0.998, 'logistic_regression': 0.997, 'snr_threshold_baseline': 0.96}
+  quality_task    speaker_grouped_cv AUC {'svm_rbf': 0.999, 'random_forest': 0.998, 'knn_k3': 0.991, 'gradient_boosting': 0.998, 'logistic_regression': 0.997, 'snr_threshold_baseline': 0.96}
+seed 1 done after 821s
+  original_style  random_split       AUC {'svm_rbf': 1.0, 'random_forest': 1.0, 'knn_k3': 1.0, 'gradient_boosting': 1.0, 'logistic_regression': 1.0, 'snr_threshold_baseline': 0.992}
+  original_style  speaker_grouped_cv AUC {'svm_rbf': 1.0, 'random_forest': 1.0, 'knn_k3': 1.0, 'gradient_boosting': 1.0, 'logistic_regression': 1.0, 'snr_threshold_baseline': 0.994}
+  quality_task    random_split       AUC {'svm_rbf': 0.999, 'random_forest': 0.998, 'knn_k3': 0.995, 'gradient_boosting': 0.998, 'logistic_regression': 0.997, 'snr_threshold_baseline': 0.96}
+  quality_task    speaker_grouped_cv AUC {'svm_rbf': 0.998, 'random_forest': 0.997, 'knn_k3': 0.988, 'gradient_boosting': 0.997, 'logistic_regression': 0.996, 'snr_threshold_baseline': 0.958}
+seed 2 done after 1287s
+  original_style  random_split       AUC {'svm_rbf': 1.0, 'random_forest': 1.0, 'knn_k3': 1.0, 'gradient_boosting': 1.0, 'logistic_regression': 1.0, 'snr_threshold_baseline': 0.994}
+  original_style  speaker_grouped_cv AUC {'svm_rbf': 1.0, 'random_forest': 1.0, 'knn_k3': 1.0, 'gradient_boosting': 1.0, 'logistic_regression': 1.0, 'snr_threshold_baseline': 0.994}
+  quality_task    random_split       AUC {'svm_rbf': 1.0, 'random_forest': 0.999, 'knn_k3': 0.997, 'gradient_boosting': 0.999, 'logistic_regression': 0.999, 'snr_threshold_baseline': 0.964}
+  quality_task    speaker_grouped_cv AUC {'svm_rbf': 0.999, 'random_forest': 0.998, 'knn_k3': 0.993, 'gradient_boosting': 0.998, 'logistic_regression': 0.997, 'snr_threshold_baseline': 0.961}
+exit=0

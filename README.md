@@ -35,6 +35,10 @@ It is an independent continuation of a 2024 ITC course project on Khmer ASR data
   Grouped by speaker, the best model (SVM) reaches 0.985 accuracy; detection falls to about 93-94%
   for noise at 20 dB SNR and for babble and brown noise. A simple SNR threshold reaches 0.912 but
   wrongly flags 13% of clean clips, against 1-2% for the models.
+* **The models fail on noise they were not trained on.** Holding one noise type out of training,
+  the SVM detects only **1.7%** of recordings with unseen background speech (babble), while the
+  simple SNR threshold detects 93.5%. High in-distribution accuracy is not evidence of a usable
+  quality filter.
 * **Leakage from a random split was small here** (accuracy 0.990 vs 0.985 when grouped by
   speaker), even though about 760 recordings had segments on both sides of the random split.
 
@@ -83,8 +87,32 @@ Accuracy; classes are balanced (50.3% degraded). ROC-AUC is 0.991-0.999 for all 
 | Random forest | 1.000 | 1.000 | 0.998 | 0.956 | 0.944 | 2.1% |
 | SNR threshold | 1.000 | 0.994 | 1.000 | 0.847 | 0.942 | 13.2% |
 
-**In progress:** an *unseen noise type* experiment (train on four noise types, test on the fifth,
-grouped by speaker) is being added; its results will appear here when the run completes.
+![Detection rate by SNR](reports/figures/detection_by_snr.png)
+
+### Generalisation to an unseen noise type
+
+Real recordings contain noise that no training set anticipates. Each noise type in turn was held
+out of training (the models learn from clean speech and the other four types) and the detectors
+were tested on held-out speakers with that unseen type. Share of degraded segments detected, mean
+over 3 seeds:
+
+| Held-out noise | SVM | Random forest | KNN | Gradient boosting | Logistic regression | SNR threshold |
+|---|---|---|---|---|---|---|
+| White | 0.995 | 0.996 | 0.994 | 0.850 | 0.690 | 1.000 |
+| Pink | 0.998 | 0.996 | 0.973 | 0.893 | 1.000 | 0.994 |
+| Hum | 0.818 | 0.958 | 0.797 | 0.976 | 0.966 | 1.000 |
+| Brown | 0.628 | 0.449 | 0.673 | 0.441 | 0.616 | 0.838 |
+| **Babble (other speakers)** | **0.017** | 0.291 | 0.048 | 0.135 | 0.146 | **0.935** |
+| False alarms on clean speech | 0.1-1.2% | 0.1-2.1% | 0.1-2.6% | 0.2-2.6% | 0.5-3.5% | 12.8-13.5% |
+
+![Detection of an unseen noise type](reports/figures/unseen_noise_recall.png)
+
+**The models that score 0.98 in-distribution do not generalise.** Trained without babble, the SVM
+detects 1.7% of recordings with background speech, the most likely noise in community recordings;
+the best model reaches 29%. The non-ML SNR threshold, which learns nothing about noise shapes,
+detects 93.5% of them, at the cost of flagging about 13% of clean clips. A learned quality filter
+trained on synthetic noise should therefore not be used on its own; in a collection pipeline, a
+simple SNR screen plus human review is the safer first step.
 
 ## Method
 

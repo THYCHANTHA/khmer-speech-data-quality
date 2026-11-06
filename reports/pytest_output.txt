@@ -38,4 +38,4 @@ tests/test_signal_modules.py::test_clipping_quiet_short_and_silence_flags PASSED
 tests/test_signal_modules.py::test_text_stats_and_text_flags PASSED      [ 96%]
 tests/test_signal_modules.py::test_robust_z_and_rate_flag PASSED         [100%]
 
-============================= 31 passed in 21.99s =============================
+============================= 31 passed in 14.04s =============================

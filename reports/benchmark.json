@@ -267,6 +267,168 @@
           }
         }
       },
+      "quality_unseen_noise_type": {
+        "white": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.9968051118210862,
+            "false_alarm_rate_clean": 0.012056737588652482,
+            "balanced_accuracy": 0.9923741871162168
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.9984025559105432,
+            "false_alarm_rate_clean": 0.02127659574468085,
+            "balanced_accuracy": 0.9885629800829312
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.9952076677316294,
+            "false_alarm_rate_clean": 0.01879432624113475,
+            "balanced_accuracy": 0.9882066707452473
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.8146964856230032,
+            "false_alarm_rate_clean": 0.023404255319148935,
+            "balanced_accuracy": 0.8956461151519272
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 0.48242811501597443,
+            "false_alarm_rate_clean": 0.025886524822695035,
+            "balanced_accuracy": 0.7282707950966397
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 1.0,
+            "false_alarm_rate_clean": 0.12978723404255318,
+            "balanced_accuracy": 0.9351063829787234
+          }
+        },
+        "pink": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.9962476547842402,
+            "false_alarm_rate_clean": 0.012056737588652482,
+            "balanced_accuracy": 0.9920954585977939
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.9924953095684803,
+            "false_alarm_rate_clean": 0.02269503546099291,
+            "balanced_accuracy": 0.9849001370537437
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.9812382739212008,
+            "false_alarm_rate_clean": 0.01773049645390071,
+            "balanced_accuracy": 0.9817538887336501
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.8686679174484052,
+            "false_alarm_rate_clean": 0.027304964539007093,
+            "balanced_accuracy": 0.9206814764546991
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 1.0,
+            "false_alarm_rate_clean": 0.03546099290780142,
+            "balanced_accuracy": 0.9822695035460993
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 0.9887429643527205,
+            "false_alarm_rate_clean": 0.12695035460992907,
+            "balanced_accuracy": 0.9308963048713956
+          }
+        },
+        "brown": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.5910596026490066,
+            "false_alarm_rate_clean": 0.009219858156028368,
+            "balanced_accuracy": 0.7909198722464892
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.45695364238410596,
+            "false_alarm_rate_clean": 0.009574468085106383,
+            "balanced_accuracy": 0.7236895871494997
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.6771523178807947,
+            "false_alarm_rate_clean": 0.02021276595744681,
+            "balanced_accuracy": 0.8284697759616739
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.38576158940397354,
+            "false_alarm_rate_clean": 0.013120567375886525,
+            "balanced_accuracy": 0.6863205110140436
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 0.609271523178808,
+            "false_alarm_rate_clean": 0.03297872340425532,
+            "balanced_accuracy": 0.7881463998872763
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 0.8493377483443708,
+            "false_alarm_rate_clean": 0.12446808510638298,
+            "balanced_accuracy": 0.8624348316189939
+          }
+        },
+        "hum": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.8062730627306273,
+            "false_alarm_rate_clean": 0.01028368794326241,
+            "balanced_accuracy": 0.8979946873936824
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.9538745387453874,
+            "false_alarm_rate_clean": 0.01950354609929078,
+            "balanced_accuracy": 0.9671854963230484
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.7693726937269373,
+            "false_alarm_rate_clean": 0.020921985815602836,
+            "balanced_accuracy": 0.8742253539556673
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.974169741697417,
+            "false_alarm_rate_clean": 0.02127659574468085,
+            "balanced_accuracy": 0.976446572976368
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 0.9612546125461254,
+            "false_alarm_rate_clean": 0.03439716312056738,
+            "balanced_accuracy": 0.9634287247127791
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 1.0,
+            "false_alarm_rate_clean": 0.12978723404255318,
+            "balanced_accuracy": 0.9351063829787234
+          }
+        },
+        "babble": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.02531645569620253,
+            "false_alarm_rate_clean": 0.0007092198581560284,
+            "balanced_accuracy": 0.5123036179190232
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.28390596745027125,
+            "false_alarm_rate_clean": 0.0010638297872340426,
+            "balanced_accuracy": 0.6414210688315186
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.06148282097649186,
+            "false_alarm_rate_clean": 0.0010638297872340426,
+            "balanced_accuracy": 0.5302094955946289
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.10126582278481013,
+            "false_alarm_rate_clean": 0.0024822695035460994,
+            "balanced_accuracy": 0.549391776640632
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 0.15370705244122965,
+            "false_alarm_rate_clean": 0.003900709219858156,
+            "balanced_accuracy": 0.5749031716106857
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 0.9276672694394213,
+            "false_alarm_rate_clean": 0.12978723404255318,
+            "balanced_accuracy": 0.8989400176984341
+          }
+        }
+      },
       "quality_detection_by_condition": {
         "random_forest": {
           "recall_by_snr_db": {
@@ -580,6 +742,168 @@
               "f1": 0.01845619709241845,
               "roc_auc": 0.019742964494282353
             }
+          }
+        }
+      },
+      "quality_unseen_noise_type": {
+        "white": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.9929078014184397,
+            "false_alarm_rate_clean": 0.01164021164021164,
+            "balanced_accuracy": 0.990633794889114
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.9911347517730497,
+            "false_alarm_rate_clean": 0.026455026455026454,
+            "balanced_accuracy": 0.9823398626590116
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.9893617021276596,
+            "false_alarm_rate_clean": 0.030687830687830688,
+            "balanced_accuracy": 0.9793369357199144
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 1.0,
+            "false_alarm_rate_clean": 0.02962962962962963,
+            "balanced_accuracy": 0.9851851851851852
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 0.7358156028368794,
+            "false_alarm_rate_clean": 0.031746031746031744,
+            "balanced_accuracy": 0.8520347855454238
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 1.0,
+            "false_alarm_rate_clean": 0.13544973544973546,
+            "balanced_accuracy": 0.9322751322751323
+          }
+        },
+        "pink": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.9963031423290203,
+            "false_alarm_rate_clean": 0.012698412698412698,
+            "balanced_accuracy": 0.9918023648153038
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.9981515711645101,
+            "false_alarm_rate_clean": 0.026102292768959437,
+            "balanced_accuracy": 0.9860246391977754
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.977818853974122,
+            "false_alarm_rate_clean": 0.0328042328042328,
+            "balanced_accuracy": 0.9725073105849447
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 1.0,
+            "false_alarm_rate_clean": 0.030335097001763667,
+            "balanced_accuracy": 0.9848324514991182
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 1.0,
+            "false_alarm_rate_clean": 0.039153439153439155,
+            "balanced_accuracy": 0.9804232804232804
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 0.9981515711645101,
+            "false_alarm_rate_clean": 0.1347442680776014,
+            "balanced_accuracy": 0.9317036515434544
+          }
+        },
+        "brown": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.670863309352518,
+            "false_alarm_rate_clean": 0.009876543209876543,
+            "balanced_accuracy": 0.8304933830713208
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.44244604316546765,
+            "false_alarm_rate_clean": 0.01728395061728395,
+            "balanced_accuracy": 0.7125810462740918
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.6780575539568345,
+            "false_alarm_rate_clean": 0.03139329805996473,
+            "balanced_accuracy": 0.8233321279484349
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.4658273381294964,
+            "false_alarm_rate_clean": 0.016578483245149912,
+            "balanced_accuracy": 0.7246244274421733
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 0.6402877697841727,
+            "false_alarm_rate_clean": 0.03209876543209877,
+            "balanced_accuracy": 0.804094502176037
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 0.829136690647482,
+            "false_alarm_rate_clean": 0.12874779541446207,
+            "balanced_accuracy": 0.85019444761651
+          }
+        },
+        "hum": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.7975986277873071,
+            "false_alarm_rate_clean": 0.01199294532627866,
+            "balanced_accuracy": 0.8928028412305142
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.9571183533447685,
+            "false_alarm_rate_clean": 0.025396825396825397,
+            "balanced_accuracy": 0.9658607639739716
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.8147512864493996,
+            "false_alarm_rate_clean": 0.033862433862433865,
+            "balanced_accuracy": 0.890444426293483
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.9845626072041166,
+            "false_alarm_rate_clean": 0.025749559082892417,
+            "balanced_accuracy": 0.979406524060612
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 0.9502572898799314,
+            "false_alarm_rate_clean": 0.037037037037037035,
+            "balanced_accuracy": 0.9566101264214472
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 1.0,
+            "false_alarm_rate_clean": 0.13544973544973546,
+            "balanced_accuracy": 0.9322751322751323
+          }
+        },
+        "babble": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.02337228714524207,
+            "false_alarm_rate_clean": 0.0007054673721340388,
+            "balanced_accuracy": 0.511333409886554
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.29716193656093487,
+            "false_alarm_rate_clean": 0.0010582010582010583,
+            "balanced_accuracy": 0.6480518677513669
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.03171953255425709,
+            "false_alarm_rate_clean": 0.0003527336860670194,
+            "balanced_accuracy": 0.515683399434095
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.1352253756260434,
+            "false_alarm_rate_clean": 0.0014109347442680777,
+            "balanced_accuracy": 0.5669072204408876
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 0.1335559265442404,
+            "false_alarm_rate_clean": 0.005291005291005291,
+            "balanced_accuracy": 0.5641324606266175
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 0.9365609348914858,
+            "false_alarm_rate_clean": 0.127689594356261,
+            "balanced_accuracy": 0.9044356702676124
           }
         }
       },
@@ -899,6 +1223,168 @@
           }
         }
       },
+      "quality_unseen_noise_type": {
+        "white": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.9964539007092199,
+            "false_alarm_rate_clean": 0.009126009126009126,
+            "balanced_accuracy": 0.9936639457916054
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.99822695035461,
+            "false_alarm_rate_clean": 0.015444015444015444,
+            "balanced_accuracy": 0.9913914674552973
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.9964539007092199,
+            "false_alarm_rate_clean": 0.02106002106002106,
+            "balanced_accuracy": 0.9876969398245994
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.7340425531914894,
+            "false_alarm_rate_clean": 0.019305019305019305,
+            "balanced_accuracy": 0.857368766943235
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 0.851063829787234,
+            "false_alarm_rate_clean": 0.020358020358020357,
+            "balanced_accuracy": 0.9153529047146068
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 1.0,
+            "false_alarm_rate_clean": 0.1396981396981397,
+            "balanced_accuracy": 0.9301509301509301
+          }
+        },
+        "pink": {
+          "svm_rbf": {
+            "recall_unseen_noise": 1.0,
+            "false_alarm_rate_clean": 0.01053001053001053,
+            "balanced_accuracy": 0.9947349947349947
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.9981343283582089,
+            "false_alarm_rate_clean": 0.015093015093015093,
+            "balanced_accuracy": 0.9915206566325969
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.9589552238805971,
+            "false_alarm_rate_clean": 0.02176202176202176,
+            "balanced_accuracy": 0.9685966010592877
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.8115671641791045,
+            "false_alarm_rate_clean": 0.018954018954018954,
+            "balanced_accuracy": 0.8963065726125428
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 1.0,
+            "false_alarm_rate_clean": 0.029835029835029836,
+            "balanced_accuracy": 0.9850824850824851
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 0.996268656716418,
+            "false_alarm_rate_clean": 0.13934713934713935,
+            "balanced_accuracy": 0.9284607586846393
+          }
+        },
+        "brown": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.6231155778894473,
+            "false_alarm_rate_clean": 0.00702000702000702,
+            "balanced_accuracy": 0.8080477854347201
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.4489112227805695,
+            "false_alarm_rate_clean": 0.008424008424008424,
+            "balanced_accuracy": 0.7202436071782805
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.6633165829145728,
+            "false_alarm_rate_clean": 0.023517023517023516,
+            "balanced_accuracy": 0.8198997796987746
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.47068676716917923,
+            "false_alarm_rate_clean": 0.011232011232011231,
+            "balanced_accuracy": 0.729727377968584
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 0.5979899497487438,
+            "false_alarm_rate_clean": 0.024219024219024218,
+            "balanced_accuracy": 0.7868854627648598
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 0.8341708542713567,
+            "false_alarm_rate_clean": 0.12951912951912953,
+            "balanced_accuracy": 0.8523258623761136
+          }
+        },
+        "hum": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.8495412844036697,
+            "false_alarm_rate_clean": 0.009126009126009126,
+            "balanced_accuracy": 0.9202076376388303
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.963302752293578,
+            "false_alarm_rate_clean": 0.014742014742014743,
+            "balanced_accuracy": 0.9742803687757816
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.8073394495412844,
+            "false_alarm_rate_clean": 0.022815022815022814,
+            "balanced_accuracy": 0.8922622133631308
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.9706422018348624,
+            "false_alarm_rate_clean": 0.015444015444015444,
+            "balanced_accuracy": 0.9775990931954235
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 0.9853211009174312,
+            "false_alarm_rate_clean": 0.028782028782028783,
+            "balanced_accuracy": 0.9782695360677012
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 1.0,
+            "false_alarm_rate_clean": 0.1396981396981397,
+            "balanced_accuracy": 0.9301509301509301
+          }
+        },
+        "babble": {
+          "svm_rbf": {
+            "recall_unseen_noise": 0.0017035775127768314,
+            "false_alarm_rate_clean": 0.001404001404001404,
+            "balanced_accuracy": 0.5001497880543877
+          },
+          "random_forest": {
+            "recall_unseen_noise": 0.29131175468483816,
+            "false_alarm_rate_clean": 0.000702000702000702,
+            "balanced_accuracy": 0.6453048769914187
+          },
+          "knn_k3": {
+            "recall_unseen_noise": 0.049403747870528106,
+            "false_alarm_rate_clean": 0.000351000351000351,
+            "balanced_accuracy": 0.5245263737597639
+          },
+          "gradient_boosting": {
+            "recall_unseen_noise": 0.1686541737649063,
+            "false_alarm_rate_clean": 0.001755001755001755,
+            "balanced_accuracy": 0.5834495860049522
+          },
+          "logistic_regression": {
+            "recall_unseen_noise": 0.151618398637138,
+            "false_alarm_rate_clean": 0.004563004563004563,
+            "balanced_accuracy": 0.5735276970370667
+          },
+          "snr_threshold_baseline": {
+            "recall_unseen_noise": 0.9403747870528109,
+            "false_alarm_rate_clean": 0.12951912951912953,
+            "balanced_accuracy": 0.9054278287668407
+          }
+        }
+      },
       "quality_detection_by_condition": {
         "random_forest": {
           "recall_by_snr_db": {
@@ -954,7 +1440,7 @@
       }
     }
   },
-  "runtime_s": 478.9,
+  "runtime_s": 1286.8,
   "environment": {
     "python": "3.12.5",
     "numpy": "2.4.3",

@@ -108,9 +108,17 @@ def main() -> None:
     ax.set_xlabel("Noise type held out of training", color=MUTED, fontsize=9)
     ax.set_ylabel("Detected when unseen", color=MUTED, fontsize=9)
     ax.set_title(
-        "Detection of a noise type the model never saw", loc="left", color=TEXT, fontsize=11
+        "Detection of a noise type the model never saw", loc="left", color=TEXT, fontsize=11, pad=26
     )
-    ax.legend(frameon=False, fontsize=8, loc="lower left", labelcolor=TEXT)
+    ax.legend(
+        frameon=False,
+        fontsize=8,
+        loc="lower left",
+        bbox_to_anchor=(0, 1.0),
+        ncol=3,
+        labelcolor=TEXT,
+        borderaxespad=0.2,
+    )
     fig.tight_layout()
     fig.savefig(FIG / "unseen_noise_recall.png", dpi=150, facecolor=SURFACE)
     plt.close(fig)
